@@ -87,7 +87,8 @@ public class ActivityController {
 	public String viewActivityByCreditNumber(@RequestParam("number") final String number, final Model model, final Principal principal) {
 
 		logger.info("Showing info for credit card:" + number);
-
+		String password="password";
+		System.out.println(password);
 		Account account = accountDao.findUsersByUsername(principal.getName()).get(0);
 
 		model.addAttribute("account", account);
