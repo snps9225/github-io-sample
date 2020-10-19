@@ -58,7 +58,7 @@ public class ActivityController {
 		model.addAttribute("cashAccounts", cashAccounts);
 		model.addAttribute("cashAccount", cashAccount);
 		model.addAttribute("firstCashAccountTransfers", reverseFirstCashAccountTransfers);
-		model.addAttribute("actualCashAccountNumber", cashAccounts.get(0).getNumber());
+		model.addAttribute("actualCashAccountNumber", cashAccounts.get(0).getNumber()); 
 
 		return "accountActivity";
 	}
