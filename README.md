@@ -1,5 +1,13 @@
 # Github-io-sample
 
+## Sample Configuration files for Synopsys Intelligent Orchestration Engine
+
+- Security Manifest 
+https://github.com/devsecops-test/io-prescription/blob/master/2020.09.01/SecurityManifest.yml
+
+- Workflow Template
+https://github.com/devsecops-test/io-prescription/blob/master/2020.09.01/WorkflowTemplate.yml
+
 ## Building
 
 ```
