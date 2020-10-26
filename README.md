@@ -1,4 +1,4 @@
-# Insecure Bank
+# Github-io-sample
 
 ## Building
 
@@ -10,7 +10,7 @@ sudo apt install -y maven
 Now clone this repository.
 
 ```
-cd insecure-bank
+cd github-io-sample
 mvn clean package
 ```
 
