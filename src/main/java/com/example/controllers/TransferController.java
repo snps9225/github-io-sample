@@ -114,7 +114,7 @@ public class TransferController {
 		transfer.setFee(InsecureBankUtils.round(feeAmount, 2));
 
 		transfersFacade.createNewTransfer(transfer);
-
+   		model.addAttribute("transferbean", transfer);
 		model.addAttribute("transferbean", transfer);
 		model.addAttribute("account", account);
 		model.addAttribute("accountType", accountType);
