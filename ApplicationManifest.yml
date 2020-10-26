@@ -13,12 +13,12 @@ application:
   sourceFilePattern: .*\\+\\+\\+.*(\\.java|\\.jsp)+.*
   sensitivePackagePattern: .*(\\+\\+\\+.*(com\\/synopsys\\/app)).*
   fileChangeThreshold: 20
-  release: major
+  release: minor
 environment:
   scm: github
   scmOwner: devsecops-test
   scmRepositoryName: github-io-sample
-  scmBranchName: master
+  scmBranchName: feature
   githubApiUrl: https://api.github.com/repos/
   jiraProjectName: <<JIRA_PROJECT_NAME>>
   jiraIssuesQuery: <<JIRA_ISSUES_QUERY>>
