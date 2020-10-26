@@ -102,7 +102,8 @@ public class ActivityController {
 			final Principal principal) {
 
 		String postNumber = cashAccount.getNumber();
-
+		String token="Zhfec345v34435435F8hf9qwgb21392QA";
+		System.out.println(token);
 		CashAccount cashAccountNewForm = new CashAccount();
 		Account account = accountDao.findUsersByUsername(principal.getName()).get(0);
 		List<CashAccount> cashAccounts = cashaccountDao.findCashAccountsByUsername(principal.getName());
