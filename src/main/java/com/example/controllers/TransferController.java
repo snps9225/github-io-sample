@@ -68,7 +68,7 @@ public class TransferController {
 
 		if (bindingResult.hasErrors()) {
 			return newTransferForm(model, principal, response);
-		}
+		} 
 		else {
 			return AccountType.PERSONAL.equals(accountType) ? transferCheck(transfer, model, session, principal)
 					: transferConfirmation(transfer, model, principal, accountType);
