@@ -115,6 +115,7 @@ public class TransferController {
 		model.addAttribute("transferbean", transfer);
 		model.addAttribute("account", account);
 		model.addAttribute("accountType", accountType);
+		model.addAttribute("accountType", accountType);
 
 		return "transferConfirmation";
 	}
