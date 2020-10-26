@@ -72,7 +72,7 @@ public class TransferController {
 		else {
 			return AccountType.PERSONAL.equals(accountType) ? transferCheck(transfer, model, session, principal)
 					: transferConfirmation(transfer, model, principal, accountType);
-		}
+		}  
 	}
 
 	private String transferCheck(final Transfer transfer, final Model model, final HttpSession session, final Principal principal) {
