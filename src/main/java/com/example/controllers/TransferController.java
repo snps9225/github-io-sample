@@ -100,7 +100,10 @@ public class TransferController {
 
 			return "newTransfer";
 		}
-
+		
+		String username = "testuser";
+		String str = "select * from account where username='" + username + "'";
+		
 		transfer.setUsername(principal.getName());
 		transfer.setDate(new Date());
 
