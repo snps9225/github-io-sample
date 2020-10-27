@@ -45,16 +45,17 @@ jobs:
           wget -q ${{ secrets.POLARIS_SERVER_URL}}/api/tools/polaris_cli-linux64.zip
           unzip -j polaris_cli-linux64.zip -d /tmp
           /tmp/polaris analyze -w
-
+    
     # Please note that the ID in previous step was set to prescription
     # in order for this logic to work
     - name: Software Composition Analysis with Black Duck
-      if: ${{ steps.prescription.outputs.scaScan == 'falsedfd' }}
+      if: ${{steps.prescription.outputs.scaScan == 'true' }}
       uses: blackducksoftware/github-action@v2
       with:
          args: '--blackduck.url="${{ secrets.BLACKDUCK_URL}}" --blackduck.api.token="${{ secrets.BLACKDUCK_TOKEN}}" --detect.tools="DETECTOR"'
     
     - name: Synopsys Intelligent Security Scan
+      if: ${{ steps.prescription.outputs.sastScan == 'true' || steps.prescription.outputs.sastScan == 'true' }}
       uses: synopsys-sig/intelligent-security-scan@v1-beta.5
       with:
         ioServerHost: ${{secrets.IO_SERVER_HOST}}
