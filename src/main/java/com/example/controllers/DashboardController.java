@@ -71,6 +71,7 @@ public class DashboardController {
 
 		model.addAttribute("creditAccounts", creditAccounts);
 		model.addAttribute("account", account);
+		model.addAttribute("creditAccounts", creditAccounts);
 		model.addAttribute("accountMalicious", account);
 
 		return "userDetail";
