@@ -10,8 +10,8 @@ application:
   platformVersion: Java 8
   buildSystem: Maven
   riskMatrixRevision: Rev1.0
-  sourceFilePattern: .*\\+\\+\\+.*(\\.java|\\.jsp)+.*
-  sensitivePackagePattern: .*(\\+\\+\\+.*(com\\/synopsys\\/app)).*
+  sourceFilePattern: .*\+\+\+.*(\.java|\.jsp)+.*
+  sensitivePackagePattern: .*(\+\+\+.*(com\/example\/app)).*
   fileChangeThreshold: 20
   release: major
 environment:
